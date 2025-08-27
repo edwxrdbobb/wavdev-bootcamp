@@ -185,6 +185,14 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
                   src={bannerImage} 
                   alt="Web Development Bootcamp Banner" 
                   className="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300"
+                  onLoad={() => console.log('Banner image loaded successfully:', bannerImage)}
+                  onError={(e) => {
+                    console.error('Failed to load banner image:', bannerImage);
+                    // Fallback to a different image if the first one fails
+                    if (e.currentTarget.src !== '/banner.png') {
+                      e.currentTarget.src = '/banner.png';
+                    }
+                  }}
                 />
               </div>
 
