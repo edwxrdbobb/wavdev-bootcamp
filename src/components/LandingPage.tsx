@@ -182,7 +182,7 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
               {/* Banner Image */}
               <div className="relative">
                 <img 
-                  src={bannerImage} 
+                  src="https://qomgqjkdnvhnkqrzwuxg.supabase.co/storage/v1/object/public/images/banner.png"
                   alt="Web Development Bootcamp Banner" 
                   className="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300"
                   onLoad={() => console.log('Banner image loaded successfully:', bannerImage)}
