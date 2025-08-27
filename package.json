@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/swc-win32-x64-msvc": "^15.5.0",
     "@radix-ui/react-accordion": "^1.2.3",
     "@radix-ui/react-alert-dialog": "^1.1.6",
     "@radix-ui/react-aspect-ratio": "^1.1.2",
@@ -43,7 +42,7 @@
     "embla-carousel-react": "^8.6.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.487.0",
-    "next": "^14.2.15",
+    "next": "15.5.2",
     "next-themes": "^0.4.6",
     "react": "^18.3.1",
     "react-day-picker": "^8.10.1",
@@ -56,6 +55,10 @@
     "tailwindcss": "^3.4.14",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^1.1.2"
+  },
+  "optionalDependencies": {
+  "@next/swc-linux-x64-gnu": "15.5.2",
+  "@next/swc-linux-x64-musl": "15.5.2"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
